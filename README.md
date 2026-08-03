@@ -2,7 +2,13 @@
 
 [![ci](https://github.com/danielmjrr/tickreplay/actions/workflows/ci.yml/badge.svg)](https://github.com/danielmjrr/tickreplay/actions/workflows/ci.yml)
 
-Tick-accurate backtesting for MetaTrader 5 data, built around two ideas:
+Backtest on every tick instead of on bars — at roughly a billion ticks per second.
+tickreplay pairs a memory-mapped tick store and a JIT-compiled replay kernel with the
+statistical tooling to tell a real edge from a backtesting artifact. Years of MT5
+tick history replay in milliseconds; a hundred-config parameter sweep finishes before
+your coffee does.
+
+It is built around two ideas:
 
 1. **Bar backtests lie.** Inside one OHLC bar you cannot know whether the high or the
    low printed first, so any bar-level simulation of a stop loss and take profit is
