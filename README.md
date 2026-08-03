@@ -2,7 +2,7 @@
 
 [![ci](https://github.com/danielmjrr/tickreplay/actions/workflows/ci.yml/badge.svg)](https://github.com/danielmjrr/tickreplay/actions/workflows/ci.yml)
 
-Backtest on every tick instead of on bars — at roughly a billion ticks per second.
+Backtest on every tick instead of on bars - at roughly a billion ticks per second.
 tickreplay pairs a memory-mapped tick store and a JIT-compiled replay kernel with the
 statistical tooling to tell a real edge from a backtesting artifact. Years of MT5
 tick history replay in milliseconds; a hundred-config parameter sweep finishes before
