@@ -1,0 +1,36 @@
+name: Bug report
+description: Something in tickreplay does not work as it must.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Tell us what you saw. Paste the full error and traceback if there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: A short script is best. Use synthetic ticks from tickreplay.synth if you cannot share your data.
+      render: python
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: tickreplay version
+      description: Run `python -c "import tickreplay; print(tickreplay.__version__)"`.
+      placeholder: 0.1.0
+  - type: input
+    id: env
+    attributes:
+      label: Python, numba and OS
+      placeholder: Python 3.13, numba 0.61, macOS 15

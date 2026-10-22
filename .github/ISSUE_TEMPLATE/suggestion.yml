@@ -1,0 +1,16 @@
+name: Suggestion
+description: Ask for a new feature or a change.
+labels: [suggestion]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What do you want to do
+      description: Tell us the backtest or research task that tickreplay makes hard or does not support.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: How can tickreplay help with this task?
